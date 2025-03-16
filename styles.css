@@ -52,5 +52,36 @@ footer {
     font-family: sans-serif;
     text-align: center;
     padding: 1rem;
+}
 
+@media screen and (min-width: 768px) {
+
+   nav {
+    margin: 1rem 0 0 0;
+    padding: 0.5rem;
+    background-color: #d9043d;
+   }
+   
+    nav li {
+        border: none;
+        display: inline;
+    
+    }
+
+    #gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0 2rem;
+    }
+
+    figure:last-of-type {
+        grid-column: span 2;
+        text-align: center;
+    }
+    h3{
+        text-align: left;
+    }
+    p {
+        text-align: left;
+    }
 }
